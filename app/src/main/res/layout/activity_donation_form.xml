@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonationModule.DonationForm">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/formToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="8dp"
+        android:background="@color/teal_200"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/DonateFormDetails"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/formToolbar"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Donation Details"
+                android:textAlignment="textStart"
+                android:textColor="#EDB800"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/form_label_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/name_field"
+                android:layout_alignBottom="@+id/name_field"
+                android:fontFamily="sans-serif"
+                android:text="NAME:"
+                android:textColor="#EE000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_field"
+                style="@style/input_style"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/contact"
+                android:layout_alignBottom="@+id/contact"
+                android:layout_alignParentEnd="true"
+                android:width="1dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:inputType="text|textPersonName|textAutoCorrect|textCapWords" />
+
+            <TextView
+                android:id="@+id/contact"
+                style="@style/form_label_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/name_field"
+                android:layout_alignBottom="@+id/name_field"
+                android:fontFamily="sans-serif"
+                android:text="CONTACT:"
+                android:textColor="#EE000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/contact_field"
+                style="@style/input_style"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/contact"
+                android:layout_alignBottom="@+id/contact"
+                android:layout_alignParentEnd="true"
+                android:width="1dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="DDDDDDDDDD"
+                android:inputType="phone" />
+
+            <TextView
+                android:id="@+id/amount"
+                style="@style/form_label_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/contact_field"
+                android:layout_alignBottom="@+id/contact_field"
+                android:fontFamily="sans-serif"
+                android:text="AMOUNT:"
+                android:textColor="#EE000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/amount_field"
+                style="@style/input_style"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_alignStart="@+id/amount"
+                android:layout_alignBottom="@+id/amount"
+                android:layout_alignParentEnd="true"
+                android:width="1dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:hint="Enter your donate amount"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/donate_button"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_alignStart="@+id/amount_field"
+                android:layout_alignBottom="@+id/amount_field"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="Next"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

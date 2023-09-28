@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="ExtraText">
+            <solid android:color="#40ffffff" /> <!-- Background color of the input field -->
+            <corners android:radius="8dp" /> <!-- Rounded corners for the input field -->
+            <stroke
+                android:width="2dp"
+                android:color="#10ffffff"
+                />
+            <padding
+                android:left="4dp"/>
+            <margin
+                android:left="4dp"/>
+
+        </shape>
+    </item>
+</selector>

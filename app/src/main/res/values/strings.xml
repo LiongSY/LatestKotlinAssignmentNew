@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="Congrate">YOU HELP US REACH NEW\nFINANACIAL DONATION PROGRESS</string>
+    <string-array name="payment_method">
+        <item>Credit Card</item>
+        <item>Debit Card</item>
+    </string-array>
+    <string-array name="sort">
+        <item>Amount</item>
+        <item>Date</item>
+        <item>clear sort</item>
+    </string-array>
+    <string name="title_activity_donation_record">DonationRecord</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="draft_desc">draft button\n\n</string>
+    <string name="date">Today Date :</string>
+    <string name="login">Login to Account</string>
+    <string name="btn_login">Login</string>
+    <string name="user_ID">ID</string>
+    <string name="user_password">Password</string>
+    <string name="topButtonsStyle">bold</string>
+    <string name="title_activity_admin_question">adminQuestion</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile Photo</string>
+    <string name="background">Background\n</string>
+    <string name="backgroundPurple">purpleBackground</string>
+    <string name="donation">donation</string>
+    <string name="resources">resources</string>
+    <string name="community">community</string>
+    <string name="comments">Comments:</string>
+    <string name="addBtnDesc">addBtn</string>
+    <string name="editButtonDesc">Edit Button</string>
+    <string name="select_file">File Upload (in pdf) :</string>
+    <string name="upload_file">UPLOAD FILE</string>
+    <string name="notifications">Subscribe\n</string>
+    <string name="Educator">Educator\n</string>
+</resources>

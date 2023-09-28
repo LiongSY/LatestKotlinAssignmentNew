@@ -1,0 +1,61 @@
+<!-- res/layout/list_item_email_type.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/column_shape_2"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Column Title: "Email Type" -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Type"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- TextView to display the item name -->
+        <TextView
+            android:id="@+id/emailTypeNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Column Title: "School Name" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="School Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- TextView to display the school name -->
+        <TextView
+            android:id="@+id/schoolNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Checkbox to select the item (right-aligned) -->
+    <CheckBox
+        android:id="@+id/emailTypeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="red">#ff0000</color>
+    <color name="grey">#808080</color>
+    <color name="background">#e8e4fa</color>
+    <color name="toolbarBack">#6a5be2</color>
+    <color name="button">#b2b5fd</color>
+    <color name="apricot">#E4DAD2</color>
+    <color name="purple">#D1ACFF</color>
+    <color name="blue">#B2DDFD</color>
+    <color name="darkblue">#4079A8</color>
+    <color name="darkPurple">#E4E5F5</color>
+    <color name="subtext">#5d6580</color>
+<!--    <color name="buttonColor">#145ac9</color>-->
+    <color name="toolbar">#735dfc</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="PositionColor">#000</color>
+    <color name="buttonColor">#A66BC8</color>
+    <color name="backgroundColor">#9C27B0</color>
+    <color name="commentColor">#FF172783</color>
+    <color name="boxColor">#FF836C87</color>
+</resources>

@@ -1,0 +1,19 @@
+<!-- res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/baseline_dashboard_24" />
+
+    <item
+        android:id="@+id/navigation_user"
+        android:title="Users"
+        android:icon="@drawable/baseline_person_24" />
+
+    <item
+        android:id="@+id/navigation_institution"
+        android:title="Institution"
+        android:icon="@drawable/baseline_menu_book_24" />
+</menu>

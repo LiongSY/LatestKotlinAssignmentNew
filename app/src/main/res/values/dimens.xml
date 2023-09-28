@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Side_Margin">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="big_margin">100dp</dimen>
+    <dimen name="iconMargin">5dp</dimen>
+    <dimen name="donationAmount">38sp</dimen>
+    <dimen name="donationMargin">10dp</dimen>
+    <dimen name="tabButtonPadding">15dp</dimen>
+    <dimen name="buttonText">12sp</dimen>
+    <dimen name="tabButtonHeight">48dp</dimen>
+    <dimen name="tabButtonWidth">150dp</dimen>
+    <dimen name="textMargin">10dp</dimen>
+    <dimen name="textSize">26sp</dimen>
+    <dimen name="commentsMargin">15dp</dimen>
+    <dimen name="emailSize">15sp</dimen>
+    <dimen name="listtitleSize">18sp</dimen>
+    <dimen name="listQuestionSize">13sp</dimen>
+</resources>

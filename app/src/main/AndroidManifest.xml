@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <application
+
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment"
+        tools:targetApi="31">
+        <service android:name=".DonationModule.Community.NetworkCheckService" />
+
+
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".Resources.AddResources"
+            android:exported="false"
+            android:parentActivityName=".Resources.AddResources" />
+        <activity
+            android:name=".Resources.DetailsResource"
+            android:exported="false"
+            android:parentActivityName=".Resources.AddResources" />
+        <activity
+            android:name=".Resources.EducatorResources"
+            android:exported="false"
+            android:parentActivityName=".Resources.AddResources" />
+        <activity
+            android:name=".Resources.Report"
+            android:exported="false"
+            android:parentActivityName=".Resources.AddResources" />
+        <activity
+            android:name=".Resources.ResourcesList"
+            android:exported="false"
+            android:parentActivityName=".Resources.AddResources" />
+        <activity
+            android:name=".Resources.Search"
+            android:exported="false"
+            android:parentActivityName=".Resources.AddResources" />
+        <activity
+            android:name=".DonationModule.Community.EditQuestions"
+            android:exported="false" />
+        <activity
+            android:name=".DonationModule.Community.CreateQuestions"
+            android:exported="false" />
+        <activity
+            android:name=".DonationModule.Community.QuestionDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DonationModule.Community.Questions"
+            android:exported="false"
+            android:parentActivityName=".DonationModule.Community.Questions" />
+        <activity
+            android:name=".DonationModule.Community.Community"
+            android:exported="false" />
+        <activity
+            android:name=".DonationModule.DonationReport"
+            android:exported="false"
+            android:label="Donation Report"
+            android:parentActivityName=".DonationModule.DonationPage" />
+        <activity
+            android:name=".DonationModule.DonationRecordDetails"
+            android:exported="false"
+            android:label="Record Details"
+            android:parentActivityName=".DonationModule.DonationRecord" />
+        <activity
+            android:name=".DonationModule.DonationDraftRecord"
+            android:exported="false"
+            android:label="Donation Draft"
+            android:parentActivityName=".DonationModule.DonationRecord" />
+        <activity
+            android:name=".DonationModule.DonationRecord"
+            android:exported="false"
+            android:label="Donation Record"
+            android:parentActivityName=".DonationModule.DonationPage"
+            android:theme="@style/Theme.Assignment" />
+        <activity
+            android:name=".DonationModule.DonationCompleted"
+            android:exported="false"
+            android:parentActivityName=".DonationModule.DonationPage" />
+        <activity
+            android:name=".DonationModule.DonationPayment"
+            android:exported="false"
+            android:label="Payment"
+            android:parentActivityName=".DonationModule.DonationForm" />
+        <activity
+            android:name=".DonationModule.DonationForm"
+            android:exported="false"
+            android:label="Donation Form"
+            android:parentActivityName=".DonationModule.DonationPage" />
+        <activity
+            android:name=".DonationModule.DonationPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserManagement.CheckBackDeleteRecord"
+            android:exported="false"
+            android:label="Deleted Record"
+            android:parentActivityName=".UserManagement.addInstituition" />
+        <activity
+            android:name=".UserManagement.studentPanel"
+            android:exported="false"
+            android:label="Student"
+            android:parentActivityName=".UserManagement.login" />
+        <activity
+            android:name=".UserManagement.teacherPanel"
+            android:exported="false"
+            android:label="Teacher"
+            android:parentActivityName=".UserManagement.login" />
+        <activity
+            android:name=".UserManagement.viewAllAcc"
+            android:exported="false"
+            android:label="User Accounts"
+            android:parentActivityName=".UserManagement.adminPanel" />
+        <activity
+            android:name=".UserManagement.AccountDetails"
+            android:exported="false"
+            android:label="Account Details"
+            android:parentActivityName=".UserManagement.adminPanel" />
+        <activity
+            android:name=".UserManagement.emailDetails"
+            android:exported="false"
+            android:label="Email Details"
+            android:parentActivityName=".UserManagement.addInstituition" />
+        <activity
+            android:name=".UserManagement.addNewEmailType"
+            android:exported="false"
+            android:label="Institution Management"
+            android:parentActivityName=".UserManagement.addInstituition" />
+        <activity
+            android:name=".UserManagement.passwordReset"
+            android:exported="false"
+            android:label="Reset Password"
+            android:parentActivityName=".UserManagement.login" />
+        <activity
+            android:name=".UserManagement.registration"
+            android:exported="false" />
+        <activity
+            android:name=".UserManagement.addInstituition"
+            android:exported="false"
+            android:label="Institution"
+            android:parentActivityName=".UserManagement.adminPanel" />
+        <activity
+            android:name=".UserManagement.adminPanel"
+            android:exported="false"
+            android:label="Admin Page"
+            android:parentActivityName=".UserManagement.login" />
+        <activity
+            android:name=".UserManagement.DBHelper"
+            android:exported="false" />
+        <activity
+            android:name=".UserManagement.login"
+            android:exported="false" />
+    </application>
+
+</manifest>

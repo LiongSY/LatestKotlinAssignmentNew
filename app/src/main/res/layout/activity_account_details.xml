@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient2">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:title="Account Details"
+        android:titleTextColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profile"
+                android:contentDescription="Profile Picture"
+                android:onClick="onUploadPictureButtonClick"
+                android:clickable="true" />
+
+            <!-- Button to upload/change profile picture -->
+            <Button
+                android:id="@+id/uploadPictureButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Upload Picture"
+                android:onClick="onUploadPictureButtonClick"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:backgroundTint="@color/buttonColor"
+                android:drawableLeft="@drawable/baseline_drive_folder_upload_24"
+                android:drawablePadding="20dp"
+                />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/emailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/uploadPictureButton"
+                android:text="Email"
+                android:textColor="#000000" />
+
+            <EditText
+                android:background="#30ffffff"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="20dp"
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailTitle"
+                android:layout_marginTop="8dp"
+                android:hint="Enter Email"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:enabled="false"
+                android:focusable="false" />
+
+            <!-- Position -->
+            <TextView
+                android:id="@+id/positionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailEditText"
+                android:layout_marginTop="16dp"
+                android:text="Position"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/positionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/positionTitle"
+                android:layout_marginTop="8dp"
+                android:background="#30ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Position"
+                android:enabled="false"
+                android:focusable="false"/>
+
+            <!-- First Name -->
+            <TextView
+                android:id="@+id/firstNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/positionEditText"
+                android:layout_marginTop="16dp"
+
+                android:text="First Name"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstNameTitle"
+                android:layout_marginTop="8dp"
+                android:background="#30ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter First Name"/>
+
+            <!-- Last Name -->
+            <TextView
+                android:id="@+id/lastNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/firstNameEditText"
+                android:layout_marginTop="16dp"
+                android:text="Last Name"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastNameTitle"
+                android:layout_marginTop="8dp"
+                android:background="#30ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Last Name"/>
+
+            <!-- Phone Number -->
+            <TextView
+                android:id="@+id/phoneNumTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lastNameEditText"
+                android:layout_marginTop="16dp"
+                android:text="Phone Number"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/phoneNumEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneNumTitle"
+                android:layout_marginTop="8dp"
+                android:background="#30ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/baseline_phone_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Phone Number"/>
+
+            <!-- Password -->
+            <TextView
+                android:id="@+id/passwordTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneNumEditText"
+                android:layout_marginTop="16dp"
+                android:text="Password"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordTitle"
+                android:layout_marginTop="8dp"
+                android:background="#30ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Password"
+                android:inputType="textPassword"/>
+
+            <!-- Confirm Password -->
+            <TextView
+                android:id="@+id/conPasswordTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordEditText"
+                android:layout_marginTop="16dp"
+                android:text="Confirm Password"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/conPasswordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/conPasswordTitle"
+                android:layout_marginTop="8dp"
+                android:background="#30ffffff"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/baseline_password_24"
+                android:drawablePadding="20dp"
+                android:hint="Enter Confirm Password"
+                android:inputType="textPassword"/>
+
+            <!-- Save Button at the bottom -->
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/conPasswordEditText"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:text="Save"
+                android:onClick="onSaveButtonClick"
+                android:textColor="@color/white"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                android:textAllCaps="true"
+                android:backgroundTint="@color/buttonColor"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
